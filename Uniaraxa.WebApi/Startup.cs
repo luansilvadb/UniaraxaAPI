@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+ï»¿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,28 +9,28 @@ using Uniaraxa.Infrastructure;
 namespace Uniaraxa.WebApi
 {
     /// <summary>
-    /// Classe responsável por configurar a inicialização da aplicação.
+    /// Classe responsï¿½vel por configurar a inicializaï¿½ï¿½o da aplicaï¿½ï¿½o.
     /// </summary>
     public class Startup
     {
         /// <summary>
         /// Construtor da classe Startup.
         /// </summary>
-        /// <param name="configuration">A configuração da aplicação.</param>
+        /// <param name="configuration">A configuraï¿½ï¿½o da aplicaï¿½ï¿½o.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
         /// <summary>
-        /// Obtém ou define a configuração da aplicação.
+        /// Obtï¿½m ou define a configuraï¿½ï¿½o da aplicaï¿½ï¿½o.
         /// </summary>
         public IConfiguration Configuration { get; }
 
         /// <summary>
-        /// Configura os serviços do aplicativo.
+        /// Configura os serviï¿½os do aplicativo.
         /// </summary>
-        /// <param name="services">A coleção de serviços.</param>
+        /// <param name="services">A coleï¿½ï¿½o de serviï¿½os.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructure();
@@ -43,10 +43,23 @@ namespace Uniaraxa.WebApi
                     Title = "Uniaraxa - WebApi",
                 });
             });
+
+            // Configurar a polï¿½tica de CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+            });
+            });
         }
 
+
         /// <summary>
-        /// Configura o pipeline de requisição HTTP.
+        /// Configura o pipeline de requisiï¿½ï¿½o HTTP.
         /// </summary>
         /// <param name="app">O objeto IApplicationBuilder.</param>
         /// <param name="env">O ambiente de hospedagem web.</param>
@@ -57,9 +70,11 @@ namespace Uniaraxa.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("AllowAllOrigins");
 
             app.UseAuthorization();
 
@@ -67,9 +82,11 @@ namespace Uniaraxa.WebApi
 
             app.UseSwaggerUI(c =>
             {
+                c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Uniaraxa");
+                
             });
-            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

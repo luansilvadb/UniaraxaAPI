@@ -267,29 +267,29 @@
         </member>
         <member name="T:Uniaraxa.WebApi.Startup">
             <summary>
-            Classe responsável por configurar a inicialização da aplicação.
+            Classe respons�vel por configurar a inicializa��o da aplica��o.
             </summary>
         </member>
         <member name="M:Uniaraxa.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             Construtor da classe Startup.
             </summary>
-            <param name="configuration">A configuração da aplicação.</param>
+            <param name="configuration">A configura��o da aplica��o.</param>
         </member>
         <member name="P:Uniaraxa.WebApi.Startup.Configuration">
             <summary>
-            Obtém ou define a configuração da aplicação.
+            Obt�m ou define a configura��o da aplica��o.
             </summary>
         </member>
         <member name="M:Uniaraxa.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
-            Configura os serviços do aplicativo.
+            Configura os servi�os do aplicativo.
             </summary>
-            <param name="services">A coleção de serviços.</param>
+            <param name="services">A cole��o de servi�os.</param>
         </member>
         <member name="M:Uniaraxa.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             <summary>
-            Configura o pipeline de requisição HTTP.
+            Configura o pipeline de requisi��o HTTP.
             </summary>
             <param name="app">O objeto IApplicationBuilder.</param>
             <param name="env">O ambiente de hospedagem web.</param>
