@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  uniaraxa.webapi:
+    image: ${DOCKER_REGISTRY-}uniaraxawebapi
+    build:
+      context: .
+      dockerfile: Uniaraxa.WebApi/Dockerfile

@@ -4,7 +4,8 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "dapper.webapi": "StartDebugging"
+        "dapper.webapi": "StartDebugging",
+        "uniaraxa.webapi": "StartDebugging"
       }
     }
   }
