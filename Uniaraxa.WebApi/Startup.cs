@@ -84,7 +84,6 @@ namespace Uniaraxa.WebApi
             {
                 c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Uniaraxa");
-                
             });
 
             app.UseEndpoints(endpoints =>
