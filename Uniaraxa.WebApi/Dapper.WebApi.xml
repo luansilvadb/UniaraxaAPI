@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Uniaraxa.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Uniaraxa.WebApi.Controllers.AvaliacaoController">
+            <summary>
+            Controlador responsável pelas operações relacionadas às Avaliações.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe AvaliacaoController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.GetAll">
+            <summary>
+            Obtém todas as Avaliações.
+            </summary>
+            <returns>Um IActionResult contendo a lista de Avaliações.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.GetById(System.Int32)">
+            <summary>
+            Obtém uma Avaliação pelo seu ID.
+            </summary>
+            <param name="id">O ID da Avaliação.</param>
+            <returns>Um IActionResult contendo a Avaliação encontrada ou NotFound se não encontrada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.Add(Uniaraxa.Core.Entities.Avaliacao)">
+            <summary>
+            Adiciona uma nova Avaliação.
+            </summary>
+            <param name="avaliacao">O objeto Avaliação contendo os dados da nova Avaliação.</param>
+            <returns>Um IActionResult contendo a Avaliação adicionada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.Delete(System.Int32)">
+            <summary>
+            Exclui uma Avaliação pelo seu ID.
+            </summary>
+            <param name="id">O ID da Avaliação a ser excluída.</param>
+            <returns>Um IActionResult indicando o resultado da exclusão.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliacaoController.Update(Uniaraxa.Core.Entities.Avaliacao)">
+            <summary>
+            Atualiza uma Avaliação existente.
+            </summary>
+            <param name="avaliacao">O objeto Avaliação contendo os dados atualizados da Avaliação.</param>
+            <returns>Um IActionResult indicando o resultado da atualização.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Controllers.AvaliadorController">
+            <summary>
+            Controlador responsável pelas operações relacionadas aos Avaliadores.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe AvaliadorController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.GetAll">
+            <summary>
+            Obtém todos os Avaliadores.
+            </summary>
+            <returns>Um IActionResult contendo a lista de Avaliadores.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.GetById(System.Int32)">
+            <summary>
+            Obtém um Avaliador pelo seu ID.
+            </summary>
+            <param name="id">O ID do Avaliador.</param>
+            <returns>Um IActionResult contendo o Avaliador encontrado ou NotFound se não encontrado.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.Add(Uniaraxa.Core.Entities.Avaliador)">
+            <summary>
+            Adiciona um novo Avaliador.
+            </summary>
+            <param name="avaliador">O objeto Avaliador contendo os dados do novo Avaliador.</param>
+            <returns>Um IActionResult contendo o Avaliador adicionado.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.Delete(System.Int32)">
+            <summary>
+            Exclui um Avaliador pelo seu ID.
+            </summary>
+            <param name="id">O ID do Avaliador a ser excluído.</param>
+            <returns>Um IActionResult indicando o resultado da exclusão.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.AvaliadorController.Update(Uniaraxa.Core.Entities.Avaliador)">
+            <summary>
+            Atualiza um Avaliador existente.
+            </summary>
+            <param name="avaliador">O objeto Avaliador contendo os dados atualizados do Avaliador.</param>
+            <returns>Um IActionResult indicando o resultado da atualização.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Controllers.CampanhaController">
+            <summary>
+            Controlador responsável pelas operações relacionadas às Campanhas.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe CampanhaController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.GetAll">
+            <summary>
+            Obtém todas as Campanhas.
+            </summary>
+            <returns>Um IActionResult contendo a lista de Campanhas.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.GetById(System.Int32)">
+            <summary>
+            Obtém uma Campanha pelo seu ID.
+            </summary>
+            <param name="id">O ID da Campanha.</param>
+            <returns>Um IActionResult contendo a Campanha encontrada ou NotFound se não encontrada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.Add(Uniaraxa.Core.Entities.Campanha)">
+            <summary>
+            Adiciona uma nova Campanha.
+            </summary>
+            <param name="campanha">O objeto Campanha contendo os dados da nova Campanha.</param>
+            <returns>Um IActionResult contendo a Campanha adicionada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.Delete(System.Int32)">
+            <summary>
+            Exclui uma Campanha pelo seu ID.
+            </summary>
+            <param name="id">O ID da Campanha a ser excluída.</param>
+            <returns>Um IActionResult indicando o resultado da exclusão.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.CampanhaController.Update(Uniaraxa.Core.Entities.Campanha)">
+            <summary>
+            Atualiza uma Campanha existente.
+            </summary>
+            <param name="campanha">O objeto Campanha contendo os dados atualizados da Campanha.</param>
+            <returns>Um IActionResult indicando o resultado da atualização.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Controllers.FuncionarioController">
+            <summary>
+            Controlador responsável pelas operações relacionadas aos funcionários.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe FuncionarioController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.GetAll">
+            <summary>
+            Obtém todos os funcionários.
+            </summary>
+            <returns>Um IActionResult contendo a lista de funcionários.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.GetById(System.Int32)">
+            <summary>
+            Obtém um funcionário pelo seu ID.
+            </summary>
+            <param name="id">O ID do funcionário.</param>
+            <returns>Um IActionResult contendo o funcionário encontrado ou NotFound se não encontrado.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.Add(Uniaraxa.Core.Entities.Funcionario)">
+            <summary>
+            Adiciona um novo funcionário.
+            </summary>
+            <param name="funcionario">O objeto Funcionario contendo os dados do novo funcionário.</param>
+            <returns>Um IActionResult contendo o funcionário adicionado.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.Delete(System.Int32)">
+            <summary>
+            Exclui um funcionário pelo seu ID.
+            </summary>
+            <param name="id">O ID do funcionário a ser excluído.</param>
+            <returns>Um IActionResult indicando o resultado da exclusão.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.FuncionarioController.Update(Uniaraxa.Core.Entities.Funcionario)">
+            <summary>
+            Atualiza um funcionário existente.
+            </summary>
+            <param name="funcionario">O objeto Funcionario contendo os dados atualizados do funcionário.</param>
+            <returns>Um IActionResult indicando o resultado da atualização.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Controllers.LoginController">
+            <summary>
+            Controlador responsável pelas operações relacionadas aos funcionários.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.LoginController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe FuncionarioController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.LoginController.Login(Uniaraxa.Core.Entities.LoginRequest)">
+            <summary>
+            Autentica um funcionário com base em seu login e senha.
+            </summary>
+            <param name="request">O objeto LoginRequest contendo os dados de login do funcionário.</param>
+            <returns>Um IActionResult indicando o resultado da autenticação.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Controllers.SugestaoController">
+            <summary>
+            Controlador responsável pelas operações relacionadas às Sugestões.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.#ctor(Uniaraxa.Application.Interfaces.IUnitOfWork)">
+            <summary>
+            Inicializa uma nova instância da classe SugestaoController.
+            </summary>
+            <param name="unitOfWork">A unidade de trabalho utilizada pelo controller.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.GetAll">
+            <summary>
+            Obtém todas as Sugestões.
+            </summary>
+            <returns>Um IActionResult contendo a lista de Sugestões.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.GetById(System.Int32)">
+            <summary>
+            Obtém uma Sugestão pelo seu ID.
+            </summary>
+            <param name="id">O ID da Sugestão.</param>
+            <returns>Um IActionResult contendo a Sugestão encontrada ou NotFound se não encontrada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.Add(Uniaraxa.Core.Entities.Sugestao)">
+            <summary>
+            Adiciona uma nova Sugestão.
+            </summary>
+            <param name="sugestao">O objeto Sugestão contendo os dados da nova Sugestão.</param>
+            <returns>Um IActionResult contendo a Sugestão adicionada.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.Delete(System.Int32)">
+            <summary>
+            Exclui uma Sugestão pelo seu ID.
+            </summary>
+            <param name="id">O ID da Sugestão a ser excluída.</param>
+            <returns>Um IActionResult indicando o resultado da exclusão.</returns>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Controllers.SugestaoController.Update(Uniaraxa.Core.Entities.Sugestao)">
+            <summary>
+            Atualiza uma Sugestão existente.
+            </summary>
+            <param name="sugestao">O objeto Sugestão contendo os dados atualizados da Sugestão.</param>
+            <returns>Um IActionResult indicando o resultado da atualização.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Program">
+            <summary>
+            Classe principal que contém o ponto de entrada para a execução do aplicativo.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Program.Main(System.String[])">
+            <summary>
+            Ponto de entrada para a execução do aplicativo.
+            </summary>
+            <param name="args">Os argumentos da linha de comando.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Cria um construtor de host para configurar e iniciar o aplicativo.
+            </summary>
+            <param name="args">Os argumentos da linha de comando.</param>
+            <returns>O construtor de host.</returns>
+        </member>
+        <member name="T:Uniaraxa.WebApi.Startup">
+            <summary>
+            Classe responsável por configurar a inicialização da aplicação.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor da classe Startup.
+            </summary>
+            <param name="configuration">A configuração da aplicação.</param>
+        </member>
+        <member name="P:Uniaraxa.WebApi.Startup.Configuration">
+            <summary>
+            Obtém ou define a configuração da aplicação.
+            </summary>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configura os serviços do aplicativo.
+            </summary>
+            <param name="services">A coleção de serviços.</param>
+        </member>
+        <member name="M:Uniaraxa.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configura o pipeline de requisição HTTP.
+            </summary>
+            <param name="app">O objeto IApplicationBuilder.</param>
+            <param name="env">O ambiente de hospedagem web.</param>
+        </member>
+    </members>
+</doc>
